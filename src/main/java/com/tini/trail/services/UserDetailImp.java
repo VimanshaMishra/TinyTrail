@@ -8,6 +8,7 @@ import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
+import javax.crypto.spec.PSource;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -54,6 +55,7 @@ public class UserDetailImp implements UserDetails {
     @Override
     public String getUsername() {
         System.out.println("Username: " + username);
+        System.out.println("test");
         return username  ;
 
     }
